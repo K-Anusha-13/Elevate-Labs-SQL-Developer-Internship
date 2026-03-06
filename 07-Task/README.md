@@ -1,63 +1,96 @@
-# Task 7: Creating Views in SQL
+# Task 07 – Creating Views in SQL
 
-🎯 **Objective:**
+## Overview
 
-To practice creating and using SQL Views for simplifying complex queries, enhancing data abstraction, and improving query reusability.
+This task focuses on understanding and implementing **SQL Views**, which provide a way to simplify complex queries and improve data abstraction in relational databases.
 
----
-
-## 🧰 Tools Used
-
-- MySQL Workbench  
+Views act as **virtual tables** that store SQL query logic. They help in improving query readability, enhancing security by restricting access to certain columns, and enabling reusable query components.
 
 ---
 
-## 📋 Tables Referenced
+## Database Scenario
 
-- **Students** – Student personal and academic information  
-- **Teachers** – Teacher subject, salary, and personal info  
-- **Classes** – Course to teacher mapping  
-- **Enrollments** – Records of students registered in classes  
+A **School Administration Database** was used to demonstrate the use of views. The dataset contains information about students, teachers, classes, and enrollments.
 
----
-
-## 🛠️ What Was Done
-
-1️⃣ **Created Views using `CREATE VIEW`:**
-- Used multiple `JOIN` operations and `GROUP BY` in views  
-- Simplified commonly used complex queries  
-- Abstracted sensitive data such as teacher salaries  
-
-2️⃣ **Demonstrated Usage of Views:**
-- Queried views just like base tables  
-- Applied filtering, ordering on views for reporting  
-- Supported logical reuse of SELECT operations  
+Views were created on top of these tables to simplify complex queries and provide structured data access for reporting purposes.
 
 ---
 
-## 📁 Files Included
+## Database Tables Referenced
 
-- `task_7.sql` – All SQL scripts including view creation and usage examples  
-- `README.md` – This documentation file  
-- `outputs of task_7/` – Screenshots or exported results from executed queries (optional)
+The following tables were used to create views:
 
----
+* **Students** – Contains student details such as name, grade, and city.
+* **Teachers** – Stores teacher information including subject and salary.
+* **Classes** – Represents classes and the teachers assigned to them.
+* **Enrollments** – Tracks which students are enrolled in which classes.
 
-## 📌 Notes
-
-- Views were created to simplify complex queries and improve reusability  
-- Abstracted sensitive fields such as teacher salaries using view filtering  
-- Compatible with both SQLite and MySQL (string concatenation adjusted for SQLite syntax using `||`)
+These tables are related through **foreign key relationships**.
 
 ---
 
-## ✅ Outcome
+## SQL Operations Performed
 
-This task demonstrates practical SQL view usage for:
-- Abstraction and simplification of complex SELECT queries  
-- Enhanced readability and security in SQL logic  
-- Reusable and maintainable components for data reporting  
+### 1. Creating Views
 
-Views are essential for clean architecture in real-world database applications and enable easier interaction with large or normalized datasets.
+Views were created using the `CREATE VIEW` statement to encapsulate complex queries.
+
+Examples include:
+
+* Combining multiple tables using **JOIN operations**
+* Aggregating data using **GROUP BY**
+* Creating simplified representations of frequently used queries
 
 ---
+
+### 2. Using Views
+
+Once created, the views were queried like regular tables.
+
+Operations performed on views include:
+
+* Retrieving records using `SELECT`
+* Filtering data using `WHERE`
+* Sorting results using `ORDER BY`
+
+This demonstrates how views can simplify repeated query logic.
+
+---
+
+### 3. Data Abstraction
+
+Views were also used to **restrict access to sensitive information**, such as teacher salary details, by exposing only the required columns.
+
+This demonstrates how views help in **improving data security and abstraction**.
+
+---
+
+## Technologies Used
+
+* **MySQL Workbench**
+
+---
+
+## Project Files
+
+| File         | Description                                             |
+| ------------ | ------------------------------------------------------- |
+| `task_7.sql` | SQL script containing view creation and example queries |
+| `outputs`    | Screenshots showing execution of view queries           |
+| `README.md`  | Documentation for Task 07                               |
+
+---
+
+## Key Concepts Demonstrated
+
+* Creating views using `CREATE VIEW`
+* Simplifying complex queries with views
+* Querying views like regular tables
+* Abstracting sensitive data using views
+* Improving query readability and reusability
+
+---
+
+## Learning Outcome
+
+Through this task, I gained practical experience in **creating and using SQL views to simplify complex queries, improve data abstraction, and enhance maintainability of SQL logic in relational database systems**.
