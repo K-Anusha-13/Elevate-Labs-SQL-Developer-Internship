@@ -79,8 +79,6 @@ Data changes were verified using `SELECT` queries to ensure correct insertion, u
 ## Technologies Used
 
 * **MySQL Workbench**
-* **Git**
-* **GitHub**
 
 ---
 
