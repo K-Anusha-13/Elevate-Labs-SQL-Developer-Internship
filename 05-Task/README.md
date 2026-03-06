@@ -1,60 +1,119 @@
-# Task-5: SQL Joins (INNER, LEFT, RIGHT, FULL)
+# Task 05 – SQL Joins (INNER, LEFT, RIGHT, FULL)
 
-🎯 **Objective:**
+## Overview
 
-To learn how to combine and retrieve data from multiple related tables using various SQL JOIN operations such as `INNER`, `LEFT`, `RIGHT`, and `FULL OUTER` joins.
+This task focuses on understanding how to **combine data from multiple related tables** using SQL JOIN operations.
+JOINs are essential in relational databases because they allow meaningful data retrieval across different tables that share relationships.
 
-🏫 **Project: Customer Service Database**
-
-This task expands the customer service database to demonstrate how different join types work when connecting relational data.
-
-📋 **Tables Used:**
-
-- **Customers** – Stores customer information like ID, name, and city.
-- **Orders** – Stores order details placed by customers, including order ID, amount, and customer reference (foreign key).
-
-🛠️ **What Was Done:**
-
-1️⃣ **Table Creation:**  
-   Created two related tables `Customers` and `Orders` with proper primary and foreign key constraints.
-
-2️⃣ **Data Insertion:**  
-   Added sample records to both tables including multiple customers and their corresponding orders.
-
-3️⃣ **Join Operations (SELECT with JOIN):**  
-   Demonstrated the usage of all major join types including:
-
-   - **INNER JOIN** – To get matched records from both tables.
-   - **LEFT JOIN** – To get all records from the left table and matched records from the right.
-   - **RIGHT JOIN** – To get all records from the right table and matched records from the left.
-   - **FULL OUTER JOIN** – To combine all matched and unmatched records from both tables.
-
-📌 **Queries Included:**
-
-- Matching customers with their orders.
-- Retrieving all customers even if they haven't placed any order.
-- Simulating `RIGHT JOIN` and `FULL JOIN` in SQLite using `LEFT JOIN` and `UNION`.
-- Displaying output with relevant fields and clear aliasing for readability.
-
-🧰 **Tools Used:**
-
-- **MySQL Workbench** – For testing all join types directly.
-- **DB Browser for SQLite** – Used with JOIN simulations for environments without native support for `RIGHT` and `FULL OUTER JOIN`.
-
-📁 **Files Included:**
-
-- `task_5.sql` – SQL script
-- `outputs of task 5/` – Screenshots or output files of executed queries to validate results.
-
-📌 **Notes:**
-
-- `RIGHT JOIN` and `FULL OUTER JOIN` are not directly supported in SQLite; workarounds using `LEFT JOIN` and `UNION` were applied.
-- Query formatting, column aliasing, and proper naming conventions were followed for clarity.
-- All JOIN operations were tested with meaningful sample data to show real-world use cases.
-
-✅ **Outcome:**
-
-Successfully mastered SQL JOIN operations to combine data from multiple tables, gaining insights into relational data structures and improving proficiency with multi-table queries.
+A **Customer Service Database** was created to demonstrate how different join types behave when retrieving related records.
 
 ---
 
+## Database Scenario
+
+The database models a simplified **Customer–Order system** where customers place orders.
+The relationship between customers and their orders is implemented using **primary and foreign key constraints**.
+
+---
+
+## Database Tables
+
+The database consists of two related tables:
+
+* **Customers** – Stores customer details such as ID, name, and city.
+* **Orders** – Stores order information including order ID, order amount, and the customer ID referencing the Customers table.
+
+The relationship between these tables demonstrates how SQL joins connect related data.
+
+---
+
+## SQL Operations Performed
+
+### 1. Table Creation
+
+Created the database tables using `CREATE TABLE` with:
+
+* Primary keys
+* Foreign key relationships
+* Appropriate data types
+
+---
+
+### 2. Data Insertion
+
+Inserted sample records using `INSERT INTO` statements including:
+
+* Multiple customers
+* Orders linked to specific customers
+
+This data enables meaningful demonstrations of different JOIN operations.
+
+---
+
+### 3. SQL Join Operations
+
+Several JOIN queries were executed to retrieve combined information from the tables.
+
+**INNER JOIN**
+
+Returns only the records that have matching values in both tables.
+
+Example use case:
+
+* Retrieving customers along with the orders they placed.
+
+---
+
+**LEFT JOIN**
+
+Returns all records from the left table (`Customers`) and matched records from the right table (`Orders`).
+
+Example use case:
+
+* Listing all customers including those who have not placed any orders.
+
+---
+
+**RIGHT JOIN**
+
+Returns all records from the right table (`Orders`) and matching records from the left table (`Customers`).
+
+---
+
+**FULL OUTER JOIN**
+
+Returns all matched and unmatched records from both tables.
+
+Since some database systems do not directly support `FULL OUTER JOIN`, alternative approaches using `LEFT JOIN` and `UNION` can be used.
+
+---
+
+## Technologies Used
+
+* **MySQL Workbench**
+
+---
+
+## Project Files
+
+| File         | Description                                                            |
+| ------------ | ---------------------------------------------------------------------- |
+| `task_5.sql` | SQL script containing table creation, data insertion, and JOIN queries |
+| `outputs`    | Screenshots showing query execution results                            |
+| `README.md`  | Documentation for Task 05                                              |
+
+---
+
+## Key Concepts Demonstrated
+
+* Understanding relational table connections
+* Using `INNER JOIN` to retrieve matching records
+* Using `LEFT JOIN` and `RIGHT JOIN` for partial matches
+* Simulating `FULL OUTER JOIN` when not supported
+* Combining multiple tables for meaningful data retrieval
+
+---
+
+## Learning Outcome
+
+Through this task, I gained hands-on experience with **SQL JOIN operations**, enabling me to efficiently combine data from multiple related tables and analyze relational datasets.
