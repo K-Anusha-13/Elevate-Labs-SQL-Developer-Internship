@@ -1,65 +1,124 @@
-# Task-4: Writing Basic SELECT Queries
+# Task 04 – Advanced Data Retrieval using SQL SELECT
 
-**🎯 Objective:**
+## Overview
 
-To practice and strengthen SQL SELECT skills by retrieving and filtering data using various clauses such as WHERE, ORDER BY, LIKE, BETWEEN, and LIMIT.
+This task focuses on strengthening SQL **data retrieval skills** by using advanced `SELECT` queries along with filtering, sorting, and pattern-matching techniques.
 
-**🏫 Project: School Administration Database**
+A **School Administration Database** was created and populated with sample data to simulate a real-world academic system. Various SQL queries were then executed to retrieve meaningful information from the dataset.
 
-This project simulates a basic school management system for querying student and class-related data.
+---
 
-**📋 Tables Used :**
+## Database Scenario
 
-Students – Contains information about each student (ID, name, grade, age, gender, city).
+The project models a simplified **School Management System** where students enroll in classes taught by teachers.
 
-Teachers – Contains details of each teacher (ID, name, subject, salary, hire date).
+The database was created and populated with **sample records** to demonstrate query operations and relational data retrieval.
 
-Classes – Associates classes with specific teachers.
+---
 
-Enrollments – Tracks which students are enrolled in which classes.
+## Database Tables
 
-**🛠️ What Was Done :**
+The database consists of the following tables:
 
-1️⃣ Table Creation
-Created 4 tables using CREATE TABLE with appropriate fields, data types, and foreign key relationships.
+* **Students** – Stores student details such as ID, name, grade, age, gender, and city.
+* **Teachers** – Contains teacher information including subject, salary, and hire date.
+* **Classes** – Represents classes and associates them with teachers.
+* **Enrollments** – Tracks which students are enrolled in which classes.
 
-2️⃣ Data Insertion
-Inserted sample records into each table including student names, teacher info, class associations, and enrollment records.
+These tables are connected through **foreign key relationships** to maintain data integrity.
 
-3️⃣ Data Retrieval (SELECT Queries)
-Executed and tested a variety of SQL queries, including:
+---
 
-Basic SELECT statements (e.g., SELECT * FROM Students)
+## SQL Operations Performed
 
-Column-specific selections
+### 1. Table Creation
 
-Filtering with WHERE, AND, OR (e.g., WHERE city = 'Delhi' AND grade > 8)
+Created the database tables using `CREATE TABLE` with appropriate:
 
-Pattern matching using LIKE (e.g., WHERE first_name LIKE 'A%')
+* Data types
+* Primary keys
+* Foreign key constraints
 
-Range filtering using BETWEEN (e.g., WHERE age BETWEEN 12 AND 16)
+---
 
-Sorting results using ORDER BY (e.g., ORDER BY last_name ASC)
+### 2. Data Insertion
 
-Limiting result size using LIMIT (e.g., LIMIT 5)
+Inserted sample records using `INSERT INTO` statements including:
 
-Joining tables to retrieve combined results (e.g., INNER JOIN Enrollments ON student_id = id)
+* Student information
+* Teacher details
+* Class assignments
+* Student enrollments
 
-**🧰 Tools Used :**
+---
 
-MySQL Workbench – Used for schema creation, data insertion, and query execution.
+### 3. Data Retrieval using SELECT
 
-**📁 Files Included :**
+Various SQL queries were executed to retrieve and analyze the data.
 
-task_4.sql – Contains the SQL scripts: CREATE, INSERT, and SELECT queries.
+Key operations practiced include:
 
-outputs of task 4 – Contains screenshots or results of executed queries for verification.
+**Basic Queries**
 
-**📌 Notes :**
+* `SELECT *`
+* Column-specific retrieval
 
-The JOIN queries helped connect data across tables for meaningful insights (e.g., listing all students enrolled in a particular subject).
+**Filtering Data**
 
-Used appropriate aliases and formatting to make queries readable and maintainable.
+* `WHERE`
+* `AND`, `OR`
+* `LIKE`
+* `BETWEEN`
 
-**✅ Outcome :**
-Successfully demonstrated the use of SQL SELECT and associated clauses to retrieve and analyze data from a relational database.
+**Sorting Results**
+
+* `ORDER BY`
+
+**Limiting Output**
+
+* `LIMIT`
+
+**Combining Tables**
+
+* `INNER JOIN` to retrieve related data across multiple tables
+
+Example use cases included:
+
+* Retrieving students from a specific city
+* Listing students within a certain age range
+* Displaying classes along with their assigned teachers
+* Viewing student enrollments across subjects
+
+---
+
+## Technologies Used
+
+
+* **MySQL Workbench**
+
+---
+
+## Project Files
+
+| File         | Description                                              |
+| ------------ | -------------------------------------------------------- |
+| `task_4.sql` | SQL script containing CREATE, INSERT, and SELECT queries |
+| `outputs`    | Screenshots showing query execution and results          |
+| `README.md`  | Documentation for Task 04                                |
+
+---
+
+## Key Concepts Demonstrated
+
+* Writing structured `SELECT` queries
+* Filtering and sorting relational data
+* Pattern matching using `LIKE`
+* Range filtering using `BETWEEN`
+* Limiting query results using `LIMIT`
+* Retrieving relational data using `JOIN`
+
+---
+
+## Learning Outcome
+
+Through this task, I gained hands-on experience in **advanced SQL data retrieval techniques**, enabling efficient analysis of relational datasets using multiple query clauses.
