@@ -1,53 +1,110 @@
-# Task-3: Writing Basic SELECT Queries
+# Task 03 – Writing Basic SELECT Queries
 
-**🎯 Objective:**
+## Overview
 
-Practice writing SQL SELECT queries to retrieve and filter data from one or more tables using WHERE, ORDER BY, LIKE, BETWEEN, and LIMIT.
+This task focuses on practicing **SQL data retrieval operations** using the `SELECT` statement.
+The goal is to understand how to extract meaningful information from relational databases using filtering, sorting, and joining techniques.
 
+A **School Administration Database** was designed to simulate a real-world academic system where students enroll in classes taught by teachers.
 
-**🏫 Project: School Administration Database**
+---
 
+## Database Scenario
 
-**Tables Used:**
+The database represents a simplified **School Management System** that manages students, teachers, classes, and enrollments.
 
-Students – Stores student details
+---
 
-Teachers – Stores teacher information
+## Database Tables
 
-Classes – Stores class and teacher associations
+The following tables were created and used:
 
-Enrollments – Tracks which students are enrolled in which classes
+* **Students** – Stores student details such as name, age, and enrollment information.
+* **Teachers** – Contains information about teachers and their subjects.
+* **Classes** – Represents classes along with the teacher assigned to each class.
+* **Enrollments** – Tracks which students are enrolled in which classes.
 
+These tables are connected using **foreign key relationships** to maintain relational integrity.
 
-**🛠️ What Was Done:**
+---
 
-1️⃣ Table Creation:
-Created 4 tables using CREATE TABLE with appropriate data types and relationships.
+## SQL Operations Performed
 
-2️⃣ Data Insertion:
-Inserted sample data into all tables including names, dates, and relationships.
+### 1. Table Creation
 
-3️⃣ Data Retrieval:
+Created the database tables using `CREATE TABLE` with appropriate:
 
-Executed various SELECT queries including:
+* Data types
+* Primary keys
+* Foreign key constraints
 
-Basic SELECT * and column-specific queries
+---
 
-Filtering with WHERE, AND, OR, LIKE, BETWEEN
+### 2. Data Insertion
 
-Sorting with ORDER BY
+Inserted sample records using `INSERT INTO` statements to populate the tables with realistic data for testing queries.
 
-Limiting with LIMIT
+---
 
-Joining tables using JOIN to fetch combined results
+### 3. Data Retrieval using SELECT
 
+Multiple `SELECT` queries were executed to retrieve and analyze the data.
 
-**🧰 Tools Used:**
+Key SQL operations practiced include:
 
-MySQL Workbench – Used to create tables, insert data, and run queries
+* **Basic Retrieval**
 
-**📁 Files Included:**
+  * `SELECT *`
+  * Column-specific selection
 
-task_3.sql – Contains CREATE, INSERT, and SELECT queries
+* **Filtering Data**
 
-Outputs of task 3 – Showing query results for verification
+  * `WHERE`
+  * `AND`, `OR`
+  * `LIKE`
+  * `BETWEEN`
+
+* **Sorting Results**
+
+  * `ORDER BY`
+
+* **Limiting Results**
+
+  * `LIMIT`
+
+* **Joining Tables**
+
+  * `JOIN` queries to combine data from multiple tables
+
+---
+
+## Technologies Used
+
+* **MySQL Workbench**
+  
+---
+
+## Project Files
+
+| File         | Description                                              |
+| ------------ | -------------------------------------------------------- |
+| `task_3.sql` | SQL script containing CREATE, INSERT, and SELECT queries |
+| `outputs`    | Screenshots showing query results for verification       |
+| `README.md`  | Documentation for Task 03                                |
+
+---
+
+## Key Concepts Demonstrated
+
+* Writing basic and advanced `SELECT` queries
+* Filtering data using conditions
+* Sorting query results
+* Limiting output rows
+* Retrieving data using **table joins**
+* Understanding relational data retrieval
+
+---
+
+## Learning Outcome
+
+Through this task, I developed a strong understanding of **SQL data retrieval techniques**, enabling me to efficiently extract and analyze information from relational databases.
