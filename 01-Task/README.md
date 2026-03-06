@@ -26,10 +26,7 @@ These entities are connected using **relational constraints** to ensure consiste
 
 ## Technologies Used
 
-* **MySQL**
 * **MySQL Workbench** (for database design and ER diagrams)
-* **Git**
-* **GitHub**
 
 ---
 
