@@ -1,62 +1,111 @@
-# Task-6: Subqueries and Nested Queries
+# Task 06 – Subqueries and Nested Queries
 
-🎯 **Objective:**
+## Overview
 
-To develop proficiency in writing SQL subqueries in various clauses (`SELECT`, `WHERE`, `FROM`) and understand scalar, correlated, and nested query structures.
+This task focuses on understanding and implementing **SQL subqueries**, which allow queries to be embedded inside other queries to perform complex filtering and data analysis.
 
----
-
-🧰 **Tools Used:**
-
-- MySQL Workbench
+Subqueries are powerful because they help break down complex problems into smaller logical steps. In this task, various types of subqueries were implemented using different SQL clauses.
 
 ---
 
-📋 **Tables Used:**
+## Database Scenario
 
-- **Students** – Student records (ID, name, age, grade, city, gender)
-- **Teachers** – Teacher info (ID, name, subject, salary, hire date)
-- **Classes** – Classes mapped to teacher IDs
-- **Enrollments** – Student-class relationships
+A **School Administration Database** was used to demonstrate the functionality of subqueries and nested queries. The dataset includes student records, teacher information, class assignments, and student enrollments.
 
 ---
 
-🛠️ **What Was Done:**
+## Database Tables
 
-1️⃣ **Scalar Subquery in SELECT Clause**  
-   - Retrieved student details alongside the average age of all students.
+The following tables were used in this task:
 
-2️⃣ **Subquery in WHERE Clause with IN**  
-   - Filtered students enrolled in classes taught by Math teachers.
+* **Students** – Stores student details such as ID, name, age, grade, city, and gender.
+* **Teachers** – Contains teacher information including subject, salary, and hire date.
+* **Classes** – Represents classes and maps them to teachers.
+* **Enrollments** – Tracks which students are enrolled in specific classes.
 
-3️⃣ **Correlated Subquery using EXISTS**  
-   - Identified teachers currently assigned to any class.
-
-4️⃣ **Subquery in FROM Clause (Derived Table)**  
-   - Calculated number of students in each city and sorted results.
-
-5️⃣ **Scalar Subquery with Comparison**  
-   - Listed students older than the average age.
+These tables are connected through **foreign key relationships**, enabling relational queries.
 
 ---
 
-📁 **Files Included:**
+## SQL Operations Performed
 
-- `task_6.sql` – All subquery-based SQL scripts
-- `outputs of task 6/` – Screenshots or exported results from DB Browser or MySQL
+### 1. Scalar Subquery in SELECT Clause
 
----
+Used a subquery inside the `SELECT` clause to retrieve additional calculated information.
 
-📌 **Notes:**
+Example use case:
 
-- Subqueries allow breaking down complex filtering or calculations into logical components.
-- Correlated subqueries provide row-specific filtering using relationships between outer and inner queries.
-- Nested logic improves query reusability and modular thinking.
+* Displaying student details along with the **average age of all students**.
 
 ---
 
-✅ **Outcome:**
+### 2. Subquery in WHERE Clause
 
-Successfully practiced and demonstrated subqueries using `IN`, `EXISTS`, `=`, `SELECT`, and `FROM`, enabling advanced data retrieval and filtering capabilities in relational databases.
+Used subqueries inside the `WHERE` clause with operators such as `IN`.
+
+Example use case:
+
+* Retrieving students who are enrolled in classes taught by **Math teachers**.
 
 ---
+
+### 3. Correlated Subquery using EXISTS
+
+Implemented a correlated subquery using `EXISTS`, where the inner query depends on values from the outer query.
+
+Example use case:
+
+* Identifying teachers who are currently assigned to at least one class.
+
+---
+
+### 4. Subquery in FROM Clause (Derived Table)
+
+Used a subquery in the `FROM` clause to create a temporary result set.
+
+Example use case:
+
+* Counting the number of students in each city and sorting the results.
+
+---
+
+### 5. Scalar Subquery with Comparison
+
+Used a subquery for value comparison.
+
+Example use case:
+
+* Listing students whose **age is greater than the average age**.
+
+---
+
+## Technologies Used
+
+* **MySQL Workbench**
+
+---
+
+## Project Files
+
+| File         | Description                                      |
+| ------------ | ------------------------------------------------ |
+| `task_6.sql` | SQL script containing all subquery-based queries |
+| `outputs`    | Screenshots showing query execution results      |
+| `README.md`  | Documentation for Task 06                        |
+
+---
+
+## Key Concepts Demonstrated
+
+* Scalar subqueries
+* Correlated subqueries
+* Nested queries
+* Subqueries in `SELECT`, `WHERE`, and `FROM` clauses
+* Filtering data using `IN`, `EXISTS`, and comparison operators
+* Logical query structuring for complex data retrieval
+
+---
+
+## Learning Outcome
+
+Through this task, I gained practical experience in writing **advanced SQL queries using subqueries**, enabling more powerful filtering, data analysis, and query modularity in relational databases.
