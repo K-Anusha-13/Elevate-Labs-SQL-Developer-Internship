@@ -1,36 +1,110 @@
-# Task 2: Data Insertion and Handling Nulls
+# Task 02 – Data Insertion and Handling NULL Values
 
-✅ **Objective:**
-To practice SQL operations like inserting, updating, and deleting data while handling NULL values and using default values effectively.
+## Overview
 
-🏥 **Project: Hospital Management Database**
+This task focuses on practicing essential **SQL data manipulation operations** including inserting, updating, and deleting records while properly handling **NULL values and default constraints**.
 
-📄 **Database contains the following tables:**
-- Hospital – Stores hospital information
-- Doctor – Stores doctor details and their associated hospital
-- Patient – Stores patient records with optional phone info
-- Appointment – Tracks appointments between doctors and patients
+The database simulates a **Hospital Management System**, where multiple entities interact through relational constraints. The goal of this task is to understand how data is stored, modified, and maintained in a relational database environment.
 
-📌 **What Was Done:**
-1. Created Tables using CREATE TABLE with relevant data types and foreign key constraints.
-2. Inserted Data using INSERT INTO, including:
-   - Rows with normal values
-   - Rows with missing values using NULL
-   - Use of DEFAULT for patient phone number
-3. Updated Records using UPDATE, including:
-   - Filling missing data (e.g., phone numbers, notes)
-   - Assigning foreign key values
-4. Deleted Records using DELETE, including:
-   - Removing cancelled appointments or patients
-   - Cleaning up unassigned doctors
-5. Displayed Data using SELECT * queries to verify changes.
+---
 
-📎 **Optional Attachments:**
-- Screenshots of successful query execution/output 
+## Database Scenario
 
-🧰 **Tools Used:**
-- MySQL Workbench (for writing and executing SQL queries)
+The project models a simplified **Hospital Management Database** containing information about hospitals, doctors, patients, and their appointments.
 
-📂 **Files Included:**
-- task_2.sql – Contains all SQL commands: CREATE, INSERT, UPDATE, DELETE, and SELECT
-- Screenshot(s) for query results
+---
+
+## Database Tables
+
+The following tables were designed and implemented:
+
+* **Hospital** – Stores information about hospitals.
+* **Doctor** – Contains details of doctors and their associated hospitals.
+* **Patient** – Stores patient records including optional contact information.
+* **Appointment** – Manages appointments between doctors and patients.
+
+These tables are connected using **foreign key relationships** to maintain data integrity.
+
+---
+
+## SQL Operations Performed
+
+### 1. Table Creation
+
+Database tables were created using `CREATE TABLE` with appropriate:
+
+* Data types
+* Primary keys
+* Foreign key constraints
+* Default values
+
+---
+
+### 2. Data Insertion
+
+Data was inserted using `INSERT INTO`, including:
+
+* Records with complete information
+* Records with missing values using **NULL**
+* Usage of **DEFAULT values** (e.g., default phone number)
+
+---
+
+### 3. Data Updates
+
+Records were modified using `UPDATE` statements, such as:
+
+* Updating missing phone numbers
+* Adding notes or appointment details
+* Assigning foreign key relationships
+
+---
+
+### 4. Data Deletion
+
+Unnecessary or invalid records were removed using `DELETE`, including:
+
+* Cancelled appointments
+* Unassigned doctors
+* Redundant patient records
+
+---
+
+### 5. Data Verification
+
+Data changes were verified using `SELECT` queries to ensure correct insertion, updates, and deletions.
+
+---
+
+## Technologies Used
+
+* **MySQL Workbench**
+* **Git**
+* **GitHub**
+
+---
+
+## Project Files
+
+| File          | Description                                                              |
+| ------------- | ------------------------------------------------------------------------ |
+| `task_2.sql`  | SQL script containing CREATE, INSERT, UPDATE, DELETE, and SELECT queries |
+| `screenshots` | Optional images showing query execution and results                      |
+| `README.md`   | Documentation for Task 02                                                |
+
+---
+
+## Key Concepts Demonstrated
+
+* Data insertion using SQL
+* Handling **NULL values**
+* Using **DEFAULT constraints**
+* Updating existing records
+* Deleting records safely
+* Maintaining **referential integrity**
+
+---
+
+## Learning Outcome
+
+Through this task, I gained hands-on experience in **manipulating relational database data using SQL** while handling missing values and maintaining consistency across related tables.
