@@ -41,17 +41,18 @@ Each folder contains SQL scripts, queries, and supporting files related to the c
 
 ## Tasks Overview
 
-| Task                 | Focus Area                                             |
-| -------------------- | ------------------------------------------------------ |
-| **01-Task**          | Database setup and basic SQL queries                   |
-| **02-Task**          | Data filtering, sorting, and conditional queries       |
-| **03-Task**          | Aggregate functions and grouping                       |
-| **04-Task**          | SQL Joins and relational data handling                 |
-| **05-Task**          | Subqueries and nested queries                          |
-| **06-Task**          | Views, indexing, and database optimization             |
-| **07-Task**          | Advanced SQL queries and procedural logic              |
-| **08-Task**          | Query performance optimization and advanced operations |
-| **09-Final-Project** | End-to-end SQL project applying all concepts learned   |
+| Task                 | Focus Area                                                   |
+| -------------------- | ------------------------------------------------------------ |
+| **01-Task**          | Database schema design and table relationships               |
+| **02-Task**          | Data insertion, updates, deletions, and handling NULL values |
+| **03-Task**          | Writing basic SQL SELECT queries                             |
+| **04-Task**          | Advanced data retrieval using filtering and sorting          |
+| **05-Task**          | SQL JOIN operations for combining relational tables          |
+| **06-Task**          | Subqueries and nested queries                                |
+| **07-Task**          | Creating and using SQL views                                 |
+| **08-Task**          | Stored procedures and functions                              |
+| **09-Final-Project** | Complete SQL project integrating all learned concepts        |
+
 
 ---
 
@@ -70,9 +71,6 @@ Each folder contains SQL scripts, queries, and supporting files related to the c
 ## Tools & Technologies
 
 * **SQL / MySQL**
-* **Git**
-* **GitHub**
-* **Relational Database Concepts**
 
 ---
 
