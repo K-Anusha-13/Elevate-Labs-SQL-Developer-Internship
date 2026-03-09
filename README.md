@@ -32,7 +32,7 @@ Elevate-Labs-SQL-Developer-Internship
 ├── 06-Task
 ├── 07-Task
 ├── 08-Task
-└── 09-Final-Project
+└── Final-Project
 ```
 
 Each folder contains SQL scripts, queries, and supporting files related to the corresponding task.
@@ -51,7 +51,7 @@ Each folder contains SQL scripts, queries, and supporting files related to the c
 | **06-Task**          | Subqueries and nested queries                                |
 | **07-Task**          | Creating and using SQL views                                 |
 | **08-Task**          | Stored procedures and functions                              |
-| **09-Final-Project** | Complete SQL project integrating all learned concepts        |
+| **Final-Project** | Complete SQL project integrating all learned concepts        |
 
 
 ---
